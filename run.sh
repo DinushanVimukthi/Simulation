@@ -22,24 +22,3 @@ done
 
 echo "All simulations have been started with 6 parallel runs."
 
-# Wait for all background jobs to finish
-wait
-
-# Timestamp for the archive
-timestamp=$(date +"%Y%m%d_%H%M%S")
-
-# Create a directory for obtained data if it doesn't exist
-mkdir -p "$base_dir/obtained_data"
-
-# Zip all logs and data/output directory with a timestamp
-zip -r "$base_dir/obtained_data/${timestamp}_simulation_logs.zip" "$base_dir/logs" "$base_dir/data/output"
-
-mv $base_dir/obtained_data/${timestamp}_simulation_logs.zip ./Simulation
-
-# Move to base directory and push to git
-cd Simulation
-git add "${timestamp}_simulation_logs.zip"
-git commit -m "Added simulation logs and data for $timestamp"
-git push
-
-echo "All logs and output data have been zipped, committed, and pushed to the repository."
