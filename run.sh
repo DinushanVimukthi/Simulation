@@ -7,7 +7,7 @@ base_dir="/home/cloudnet/dinushan/research2"
 mkdir -p "$base_dir/logs"
 
 # Extract the data to the data directory
-unzip -o ./data.zip -d "$base_dir/data"
+unzip -o ./data.zip -d "$base_dir"
 
 # Define policies
 policies=("bf" "bfr" "rrb" "mf" "bfd" "ff")
