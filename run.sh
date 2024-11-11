@@ -26,7 +26,7 @@ policies=("bf" "bfr" "rrb" "mf" "bfd" "ff")
 for policy in "${policies[@]}"
 do
     echo "Running simulation for policy: $policy"
-    nohup java -jar ./simulation.jar 600 $base_dir/data $base_dir/data/workload/planetlab/ 15 $policy > /$base_dir/logs/${policy}_1000.log &
+    nohup java -jar ./simulation.jar 600 $base_dir/data $base_dir/data/workload/planetlab/ 1 $policy > /$base_dir/logs/${policy}_1000.log &
     echo "Simulation is running in the background. Output is being logged to ${base_dir}/logs/${policy}_1000.log."
 done
 
