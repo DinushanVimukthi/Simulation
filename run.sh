@@ -1,5 +1,6 @@
 #!/bin/bash
 
+base_dir="/home/cloudnet/dinushan/ODNS"
 
 
 # Extract the data to the data directory
