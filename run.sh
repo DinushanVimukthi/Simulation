@@ -1,8 +1,6 @@
 #!/bin/bash
 
-# Define base directory
-base_dir="/home/cloudnet/dinushan/ODNS"
-mkdir -p $base_dir/logs
+
 
 # Extract the data to the data directory
 unzip -o ./data.zip -d $base_dir/
