@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# Update and install dependencies
-apt update
-apt install git -y
-apt install openjdk-17-jdk -y
-git clone <REPOSITORY_URL>
-
 # Define base directory
 base_dir="/home/cloudnet/dinushan/ODNS"
 mkdir -p $base_dir/logs
