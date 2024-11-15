@@ -17,7 +17,7 @@ run_simulation() {
     for policy in "${policies[@]}"
     do
         echo "Running simulation for policy: $policy"
-        nohup java -jar ./simulation.jar $time $base_dir/data $base_dir/data/workload/planetlab/ 15 $policy > $base_dir/logs/${timestamp}_${policy}_${time}.log &
+        nohup java -jar ./simulation.jar $time $base_dir/data $base_dir/data/workload/planetlab/ 1 $policy > $base_dir/logs/${timestamp}_${policy}_${time}.log &
     done
     # Wait for all background processes to complete
     wait
