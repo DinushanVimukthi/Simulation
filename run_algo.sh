@@ -1,6 +1,6 @@
 #!/bin/bash
 
-base_dir="/home/cloudnet/dinushan/ODNS"
+base_dir="/home/cloudnet/dinushan/ACOVM"
 
 # Check if the data directory exists
 if [ ! -d $base_dir/data ]; then
