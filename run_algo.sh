@@ -2,11 +2,11 @@
 
 base_dir="/home/cloudnet/dinushan/ACOVM"
 
-# Check if the data directory exists
-if [ ! -d $base_dir/data ]; then
-    echo "Data directory does not exist. Please extract the data.zip file to the base directory."
-    exit 1
-fi
+# # Check if the data directory exists
+# if [ ! -d $base_dir/data ]; then
+#     echo "Data directory does not exist. Please extract the data.zip file to the base directory."
+#     exit 1
+# fi
 
 
 # Extract the data to the data directory

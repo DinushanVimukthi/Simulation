@@ -7,6 +7,7 @@ git clone https://github.com/DinushanVimukthi/Simulation.git
 
 base_dir="/home/cloudnet/dinushan/ACOVM"
 mkdir -p $base_dir/logs
+mkdir -p $base_dir/data
 
 cd Simulation
 chmod 777 *
