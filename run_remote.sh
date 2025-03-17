@@ -5,7 +5,7 @@ apt install git -y
 apt install openjdk-17-jdk -y
 git clone https://github.com/DinushanVimukthi/Simulation.git
 
-base_dir="/home/cloudnet/dinushan/ODNS"
+base_dir="/home/cloudnet/dinushan/ACOVM"
 mkdir -p $base_dir/logs
 
 cd Simulation
