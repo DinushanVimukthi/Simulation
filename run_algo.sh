@@ -1,8 +1,6 @@
 #!/bin/bash
 
-base_dir="/home/dinushan/ODNS"
-mkdir -p $base_dir/logs
-mkdir -p $base_dir/data
+base_dir="/home/cloudnet/dinushan/ODNS"
 
 # Check if the data directory exists
 if [ ! -d $base_dir/data ]; then
