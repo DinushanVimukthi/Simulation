@@ -11,4 +11,4 @@ mkdir -p $base_dir/logs
 cd Simulation
 chmod 777 *
 # ./run.sh
-nohup ./run.sh > $base_dir/logs/run.log &
+nohup ./run_algo.sh > $base_dir/logs/run.log &
